@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  appraisal-dotnet:
+    build:
+      context: ./appraisal-dotnet
+    ports:
+      - 5000:5000
+  acquisition-dotnet:
+    build:
+      context: ./acquisition-dotnet
+    ports:
+      - 5001:5001

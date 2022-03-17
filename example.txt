@@ -1,0 +1,7 @@
+APOLLO_KEY=service:My-Graph-svo7up:OlX-ew1jlrlshimwOKFrwQ
+APOLLO_GRAPH_REF=My-Graph-svo7up@current
+APOLLO_SCHEMA_REPORTING=true
+
+rover subgraph introspect http://127.0.0.1:5000/graphql | rover subgraph publish My-Graph-svo7up@current --name {name} --routing-url http://127.0.0.1:5000/graphql --schema -
+
+APOLLO_KEY=service:My-Graph-svo7up:OlX-ew1jlrlshimwOKFrwQ APOLLO_GRAPH_REF=My-Graph-svo7up@current router
